@@ -1,0 +1,71 @@
+// main : ../style.less
+
+header{
+    width: 100%;
+
+
+    position:absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.header__logo {
+    margin-top: 32px;
+    position: relative;
+
+
+    img{
+        position: absolute;
+        left: 5.53px;
+        top: -5.6px;
+        z-index: 1000;
+
+        width: 31.5px;
+
+    }
+
+}
+
+.logo__text{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 32px;
+    padding-left: 50px;
+
+}
+
+.nav {
+    position: relative;
+    display: flex;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    margin-top: 27px;
+    letter-spacing: 0.2px;
+}
+a.nav__link {
+    margin-left: 71px;
+    text-decoration: none;
+    color: @white;
+
+    &:first-child{
+        margin:0;
+        margin-right:-2px
+    }
+}
+
+a.nav__link.active {
+    position: absolute;
+    top: 0;
+    left: -39px;
+    z-index: 1000;
+    margin-top: 0;
+    border-bottom: 1px solid #fff;
+}

@@ -1,0 +1,62 @@
+// main : ../style.less
+
+.intro{
+    height: 1062px;
+    background: url("/images/mask.svg") no-repeat ;
+    padding-top: 60px;
+    display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+}
+
+.intro_content {
+    padding-top: 290px;
+    color: #fff;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+
+}
+.intro__title {
+    margin-bottom: 25px;
+    font-size: 90px;
+    font-weight: 600;
+    line-height: 100px;
+    color: inherit;
+    letter-spacing: 2px;
+
+}
+.intro_suptitle {
+    margin-bottom: 60px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0.2px;
+}
+.btn {
+    display: inline-block;
+    vertical-align: top;
+
+    font-family: Gilroy, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    color: @white;
+    font-weight: 600;
+
+    width: 172px;
+    height: 54px;
+
+    border-radius: 27px;
+}
+
+.btn--grn{
+    background-color: @green;
+}
+
+// adding Gilroy font
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("/fonts/Gilroy-ExtraBold.otf") format("otf"),
+    url("/fonts/Gilroy-Light.otf") format("otf");
+}
